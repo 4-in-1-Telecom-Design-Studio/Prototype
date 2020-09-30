@@ -19,14 +19,10 @@ struct Home: View {
     @State var value: CGFloat = 50
     
     var body: some View {
-        
         VStack {
-          
             ZStack {
                 HStack {
-                 
                     Button(action: {}, label: {
-                        
                         Image(systemName: "arrow.left")
                             .font(.system(size: 14, weight: .bold))
                             .foregroundColor(.white)
@@ -43,7 +39,6 @@ struct Home: View {
                     Spacer()
                     
                     Button(action: {}, label: {
-                        
                         Image(systemName: "line.horizontal.3.decrease")
                             .font(.system(size: 14, weight: .bold))
                             .foregroundColor(.white)
@@ -54,7 +49,6 @@ struct Home: View {
                            // .shadow(color: Color.white, radius: 5, x: -5, y: -5)
                         
                             .shadow(color: Color.white.opacity(0.5), radius: 9, x: 4, y: 2)
-                         
                     })
                     
                 }
@@ -150,9 +144,7 @@ struct Home: View {
             
             // Adding Playback Buttons
             HStack(spacing: 20){
-                
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                   
                     Image(systemName: "backward.fill")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.gray)
@@ -162,13 +154,11 @@ struct Home: View {
                         // Adding Shadow
                         .shadow(color: Color("Color1").opacity(0.6), radius: 5, x: 5, y: 5)
                        // .shadow(color: Color.white, radius: 5, x: -5, y: -5)
-                    
                         .shadow(color: Color("Color1").opacity(0.6), radius: 10, x: 4, y: 2)
                     
                 })
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                   
                     Image(systemName: "pause.fill")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.white)
@@ -183,7 +173,6 @@ struct Home: View {
                 })
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                   
                     Image(systemName: "forward.fill")
                         .font(.system(size: 14, weight: .bold))
                         .foregroundColor(.gray)
@@ -199,20 +188,19 @@ struct Home: View {
                 })
             }
             .padding(.top, 25)
-            
-          
             Spacer()
         }
         .padding(.all)
-        
         .background(Color("Color").edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
     }
 }
 
 
+
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-
+#endif
