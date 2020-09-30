@@ -1,3 +1,3 @@
 # Prototype
 
-![Prototype](Prototype.gif)
+
